@@ -39,7 +39,7 @@ export const promosHandler = async (req: Request, env: Env, ctx: ExecutionContex
 	})
 }
 
-export const defaultCatchAll = async (req: Request, env: Env, ctx: ExecutionContext) => {
+export const errorHandler = async (req: Request, env: Env, ctx: ExecutionContext) => {
 	return Response.json({
 		error: "No routes matched!"
 	}, {

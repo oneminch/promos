@@ -1,4 +1,4 @@
-import { defaultCatchAll } from "./handlers";
+import { errorHandler } from "./handlers";
 import { ICallback, ISimpleRequest } from "./types";
 
 export default class Router {
@@ -46,7 +46,7 @@ export default class Router {
 		return endpoint.callback(request, env, ctx)
 	}
 
-	public addCatchAllRoute(callback: ICallback = defaultCatchAll) {
+	public addCatchAllRoute(callback: ICallback = errorHandler) {
 		this.routes.push({
 			method: "GET",
 			route: "*",
