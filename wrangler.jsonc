@@ -12,6 +12,13 @@
 	},
 	"compatibility_flags": [
 		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "promos",
+			"database_name": "promos",
+			"database_id": "7998e37a-8bdc-4728-9bd4-5666c79c309f"
+		}
 	]
 	/**
 	 * Smart Placement
